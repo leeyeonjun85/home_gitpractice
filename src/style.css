@@ -1,0 +1,14 @@
+.myImg {
+    width: 200px;
+  }
+  
+  #welcomeBox {
+    width: 400px;
+    /* border: 1px solid gray; */
+    display: grid;
+    grid-template-columns: 1fr 100px;
+  
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
