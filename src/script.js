@@ -1,19 +1,21 @@
 let myImage = document.querySelector("img");
+let img1 = "https://pixabay.com/get/gb4febf5bf67b948def3d3c7b0e57bdc58840a007d1f25733632c4e72bc24e45286019b584b5d7ee314ff5acc0b8b4909_640.jpg"
+let img2 = "https://pixabay.com/get/gf82ab36fd5d0e6c003d8bd7c1b5395666982d883a43f61ecef5dd287701500fbc1be75c985188505ee5a6d64b9617b2d_640.jpg"
 
 myImage.onclick = function () {
   let mySrc = myImage.getAttribute("src");
   if (
     mySrc ===
-    "https://pixabay.com/get/gc75f8c8bb1485aa5c0ce19bd571f21a40e3cac0239f6c6a3a8e045f9a7f7adb8bb1d29bcbdc38ea75599003bfd9b343f_640.jpg"
+    img2
   ) {
     myImage.setAttribute(
       "src",
-      "https://pixabay.com/get/gaa97cd25a9310bfb7b5f826ae3a4e90dfb2b69bad64a6d25524267d8a00824d84681b84a53a5262fa3cb3471c45b3224_640.jpg"
+      img1
     );
   } else {
     myImage.setAttribute(
       "src",
-      "https://pixabay.com/get/gc75f8c8bb1485aa5c0ce19bd571f21a40e3cac0239f6c6a3a8e045f9a7f7adb8bb1d29bcbdc38ea75599003bfd9b343f_640.jpg"
+      img2
     );
   }
 };
