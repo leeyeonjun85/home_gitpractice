@@ -3,6 +3,10 @@ body {
 }
 
 #headbox {
+	border: 1px solid #aaa;
+}
+
+#test {
 	width: 90%;
 	height: 200px;
 
