@@ -1,0 +1,344 @@
+/* 폰트
+헤드에 추가할 링크
+<link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Jua&family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&family=Poor+Story&display=swap" rel="stylesheet">
+
+font-family: 'Cute Font', cursive;
+font-family: 'Jua', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Poor Story', cursive;
+ */
+
+/* body {
+    display: grid;
+    grid-template-rows: 90px 1fr;
+} */
+
+@media(max-width:700px){
+
+}
+
+#bodybox {
+    width: 100%;
+    margin: 10px auto 10px auto;
+}
+
+
+/* ######################################################### */
+/* headbox */
+#headbox {
+    max-width: 1000px;
+    width: 98%;
+    margin: 10px auto 10px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+
+    color: #000000;
+    text-align: center;
+    box-shadow: 0px 5px 5px 0px gray;
+
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+
+    font-size: 20px;
+    font-family: 'Jua', sans-serif;
+}
+
+#headbox h1 {
+    font-size: 24px;
+    font-family: 'Poor Story', cursive;
+    font-weight: bold;
+}
+
+#head-center {
+    cursor: pointer;
+}
+
+#head-left,
+#head-center,
+#head-right {
+    margin: auto;
+}
+
+#spartaicon {
+    width: 50px;
+}
+
+#headbox button {
+    border: none;
+    background-color: #fff;
+}
+
+#headbox button:hover {
+    font-weight: bolder;
+}
+
+/* ######################################################### */
+/* indexPage */
+#homebtn-wrap button {
+    width: 80%;
+    margin: 10px auto auto auto;
+    border-radius: 10px;
+
+    font-size: 24px;
+    font-family: 'Cute Font', cursive;
+}
+
+#indexPage .mycheetah {
+    width: 200px;
+}
+
+#indexPage #homebtn-wrap {
+    vertical-align: middle;
+}
+
+#indexPage #bodybox {
+    max-width: 700px;
+    width: 80%;
+    margin: 10px auto 10px auto;
+    /* border: 1px solid; */
+
+    color: #000000;
+    text-align: center;
+    /* box-shadow: 0px 0px 3px 0px gray; */
+
+    /* padding: 6px 12px; */
+    /* font-size: 20px; */
+    /* background: #4a4a4a; */
+    /* cursor: pointer; */
+}
+
+
+/* ######################################################### */
+/* marsPage */
+#marsPage #bodybox {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.aitimes.com/news/photo/202010/132592_129694_3139.jpg');
+    background-position: center;
+    background-size: cover;
+
+    font-family: 'Nanum Myeongjo', serif;
+    color: white;
+}
+
+#marsPage .order {
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#marsPage .mybtn {
+    width: 100%;
+}
+
+#marsPage .order>table {
+    margin: 40px 0;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#marsPage option {
+    color: black;
+}
+
+#marsPage #bodybox button {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ######################################################### */
+/* moviePage */
+#moviePage .mytitle h1 {
+    font-family: 'Poor Story', cursive;
+}
+
+#moviePage .mytitle {
+    max-width: 1000px;
+    width: 100%;
+    height: 250px;
+    margin: auto;
+
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg');
+    background-position: center;
+    background-size: cover;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#moviePage .mytitle>button {
+    width: 200px;
+    height: 50px;
+
+    background-color: transparent;
+    color: white;
+
+    border-radius: 50px;
+    border: 1px solid white;
+
+    margin-top: 10px;
+}
+
+#moviePage .mytitle>button:hover {
+    border: 2px solid white;
+}
+
+#moviePage .mycomment {
+    color: gray;
+}
+
+#moviePage .mycards {
+    margin: 20px auto 0px auto;
+    width: 98%;
+    max-width: 1000px;
+}
+
+#moviePage .mypost {
+    width: 95%;
+    max-width: 500px;
+    margin: 20px auto 0px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 3px 0px gray;
+
+    display: none;
+}
+
+#moviePage .mybtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+#moviePage .mybtns>button {
+    margin-right: 10px;
+}
+
+/* ######################################################### */
+/* bucketPage */
+#bucketPage .mypic h1 {
+    font-size: 38px;
+    font-family: 'Jua', sans-serif;
+}
+
+#bucketPage .mypic {
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    height: 200px;
+
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1601024445121-e5b82f020549?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80');
+    background-position: center;
+    background-size: cover;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#bucketPage .mybox {
+    width: 95%;
+    max-width: 700px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px lightblue;
+    margin: 20px auto;
+}
+
+#bucketPage .mybucket {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bucketPage .mybucket>input {
+    width: 70%;
+}
+
+#bucketPage .mybox>li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+    min-height: 48px;
+}
+
+#bucketPage .mybox>li>h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: auto;
+    margin-bottom: 0px;
+    font-family: 'Poor Story', cursive;
+}
+
+#bucketPage .mybox>li>h2.done {
+    text-decoration: line-through
+}
+
+
+/* ######################################################### */
+/* pinklePage */
+#pinklePage .mypic h1 {
+    font-size: 38px;
+    font-family: 'Jua', sans-serif;
+}
+
+
+#pinklePage .mypic {
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+    height: 200px;
+
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2Fdata23%2F2007%2F12%2F21%2F198%2F106_sumgh2002.jpg&type=sc960_832');
+    background-position: center 30%;
+    background-size: cover;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#pinklePage .mypost {
+    width: 95%;
+    max-width: 500px;
+    margin: 20px auto 20px auto;
+
+    box-shadow: 0px 0px 3px 0px black;
+    padding: 20px;
+}
+
+#pinklePage .mypost>button {
+    margin-top: 15px;
+}
+
+#pinklePage .mycards {
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+}
+
+#pinklePage .mycards .card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-family: 'Poor Story', cursive;
+}
