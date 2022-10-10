@@ -14,18 +14,31 @@ font-family: 'Poor Story', cursive;
     grid-template-rows: 90px 1fr;
 } */
 
+h1 {
+    font-family: 'Jua', sans-serif;
+    font-size:xx-large;
+}
+
+
 #bodybox {
+    max-width: 1000px;
     width: 100%;
     margin: 10px auto 10px auto;
-	border: 1px solid #aaa;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	/* border: 1px solid #aaa; */
+    border-radius: 10px;
+
+    color: #000000;
+    text-align: center;
 }
 
 
 /* ######################################################### */
-/* headbox */
+/* header */
 #headbox {
     max-width: 1000px;
-    width: 98%;
+    width: 100%;
     margin: 10px auto 10px auto;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -38,34 +51,31 @@ font-family: 'Poor Story', cursive;
 
     display: grid;
     grid-template-columns: 100px 1fr 100px;
-
-    font-size: 20px;
-    font-family: 'Jua', sans-serif;
 }
 
-#headbox h1 {
-    font-size: 24px;
+#headbox #head-center {
+	font-size: xx-large;
+
     font-family: 'Poor Story', cursive;
-    font-weight: bold;
-}
-
-#head-center {
+    font-weight: bolder;
     cursor: pointer;
 }
 
-#head-left,
-#head-center,
-#head-right {
+#headbox #head-left,
+#headbox #head-center,
+#headbox #head-right {
     margin: auto;
 }
 
 #spartaicon {
-    width: 50px;
+    width:50%;
 }
 
 #headbox button {
     border: none;
     background-color: #fff;
+	font-size: x-large;
+    font-family: 'Jua', sans-serif;
 }
 
 #headbox button:hover {
@@ -74,42 +84,34 @@ font-family: 'Poor Story', cursive;
 
 /* ######################################################### */
 /* indexPage */
+#indexPage #welcomeBox {
+	margin: auto;
+    width: 70%;
+	/* border: 1px solid gray; */
+    /* border-radius: 10px; */
+
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+
+    font-family: 'Nanum Gothic', sans-serif;
+	font-size: large;
+}
+
+#indexPage #homebtn-wrap {
+    width: 70%;
+    margin: 50px auto auto auto;
+}
+
 #homebtn-wrap button {
     width: 80%;
     margin: 10px auto auto auto;
     border-radius: 10px;
 
-    font-size: 24px;
+    font-size: x-large;
     font-family: 'Cute Font', cursive;
 }
 
-#indexPage .mycheetah {
-    width: 200px;
-}
-
-#indexPage #homebtn-wrap {
-    vertical-align: middle;
-}
-
-#indexPage #bodybox {
-    max-width: 700px;
-    width: 80%;
-    margin: 10px auto 10px auto;
-    /* border: 1px solid; */
-
-    color: #000000;
-    text-align: center;
-    /* box-shadow: 0px 0px 3px 0px gray; */
-
-    /* padding: 6px 12px; */
-    /* font-size: 20px; */
-    /* background: #4a4a4a; */
-    /* cursor: pointer; */
-}
-
-
-
-#test {
+/* #test {
 	width: 90%;
 	height: 200px;
 
@@ -123,18 +125,9 @@ font-family: 'Poor Story', cursive;
 	background-position: center 70%;
 
 	border-radius: 10px;
-}
+} */
 
-.myImg {
-	width: 200px;
-}
-
-#welcomeBox {
-	width: 400px;
-	border: 1px solid gray;
-	display: grid;
-	grid-template-columns: 1fr 100px;
-
-	font-size: 20px;
-	font-weight: 700;
+/* mdm page */
+#mycheetah {
+	width:60%;
 }
