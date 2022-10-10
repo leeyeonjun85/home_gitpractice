@@ -4,11 +4,11 @@ headerTemplate.innerHTML = `
 
 <div id="headbox">
 	<div id="head-left">
-		<button onClick="location.href='../index.html'">
+		<button onClick="location.href='https://leeyeonjun85.github.io/home'">
 			Go🏠
 		</button>
 	</div>
-	<div id="head-center" onClick="location.href='../index.html'">
+	<div id="head-center" onClick="location.href='https://leeyeonjun85.github.io/home'">
 		연준이의 코딩 연습실✍️
 	</div>
 	<div id="head-right">
