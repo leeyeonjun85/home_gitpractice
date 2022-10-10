@@ -12,3 +12,6 @@ This is my coding practice room.
 I am currently studying web, css, and javascript.  
 Thanks :)
 
+# My Links...
+- [Mark Down](./mdpages/Mark%20Down.md)
+- [Development Log](./mdpages/Development%20Log.md)
