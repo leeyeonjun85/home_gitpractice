@@ -1,4 +1,4 @@
-# 1About...
+# About...
 
 Hi, My name is Lee Yeonjun.  
 I live in Asan City, Korea.  
@@ -11,3 +11,4 @@ I am interested in frontend and AI.
 This is my coding practice room.  
 I am currently studying web, css, and javascript.  
 Thanks :)
+
