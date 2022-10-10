@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" id="indexPage">
+<html lang="en" id="numgamePage">
 
 <head>
 	<meta charset="utf-8" />
@@ -26,58 +26,40 @@
 	<!-- 호환설정 -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- 헤더 -->
-	<script src="./src/header.js"></script>
+	<script src="../src/header.js"></script>
 	<!-- 스타일 -->
-	<link href="./src/style.css" rel="stylesheet" type="text/css" />
+	<link href="../src/style.css" rel="stylesheet" type="text/css" />
 	<!-- 자바스크립트 -->
-	<script src="./src/index_script.js" defer></script>
+	<script src="../src/numgg_script.js" defer></script>
 	<title>이연준의 코딩 연습실</title>
 </head>
 
 <body>
-	<div id="headbox">
-		<div id="head-left">
-			<button onClick="location.href='./index.html'">
-				Go🏠
-			</button>
-		</div>
-		<div id="head-center" onClick="location.href='./index.html'">
-			연준이의 코딩 연습실✍️
-		</div>
-		<div id="head-right">
-			<button onClick="location.href='https://spartacodingclub.kr/'">
-				Go<img id="spartaicon" src="https://spartacodingclub.kr/v5/icons/logo_v2.svg" />
-			</button>
-		</div>
-	</div>
-	<div id="bodybox">
-		<div id="welcomeBox">
-			<span>안녕하세요!</span>
-			<button
-				id="userNameBtn"
-				class="btn btn-primary">
-				이름을 알려주세요
-			</button>
-		</div>
-		<div id="homebtn-wrap">
-			<h1>코딩 연습실 리스트</h1>
-			<div><button 
-				class="btn btn-outline-primary"
-				onClick="location.href='http://leeyj85.shop/'">
-				스파르타 코딩 연습실
-			</button></div>
-			<div><button
-				class="btn btn-outline-secondary"
-				onClick="location.href='./pages/mdm prac.html'">
-				mdm prac
-			</button></div>
-			<div><button
-				class="btn btn-outline-success"
-				onClick="location.href='./pages/number_guess_game.html'">
-				랜덤 숫자 맞히기 게임
-			</button></div>
+	<header-component></header-component>
 
+	<div id="bodybox">
+		<h1>랜덤 숫자 맞히기 게임</h1>
+		<div class="container-50">
+			<p>
+				1에서 100까지의 숫자 가운데 하나를 맞혀보세요.
+			</p>
+			<p>
+				기회는 10번 입니다.
+			</p>
+
+			<div class="form">
+				<label for="guessField">1~100 숫자를 넣으세요 </label>
+				<input type="number" min="1" max="100" required id="guessField" class="guessField">
+				<input type="submit" value="맞나?" class="guessSubmit">
+			</div>
+
+			<div class="resultParas">
+				<p class="guesses"></p>
+				<p class="lastResult"></p>
+				<p class="lowOrHi"></p>
+			</div>
 		</div>
 	</div>
 </body>
+
 </html>

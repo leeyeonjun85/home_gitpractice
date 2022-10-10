@@ -9,10 +9,11 @@ font-family: 'Nanum Myeongjo', serif;
 font-family: 'Poor Story', cursive;
  */
 
-/* body {
-    display: grid;
-    grid-template-rows: 90px 1fr;
-} */
+body {
+    /* display: grid; */
+    /* grid-template-rows: 90px 1fr; */
+    padding-top: 8%;
+}
 
 h1 {
     font-family: 'Jua', sans-serif;
@@ -37,13 +38,20 @@ h1 {
 /* ######################################################### */
 /* header */
 #headbox {
+    position: fixed;
+    top: 0;
+    /* width: 100% */
+    left: 0;
+    right: 0;
+
     max-width: 1000px;
     width: 100%;
-    margin: 10px auto 10px auto;
+    margin: 0.2% auto 10px auto;
     padding-top: 10px;
     padding-bottom: 10px;
     border: 1px solid #aaa;
     border-radius: 10px;
+    background-color: #fff;
 
     color: #000000;
     text-align: center;
@@ -130,4 +138,32 @@ h1 {
 /* mdm page */
 #mycheetah {
 	width:60%;
+}
+
+
+/* number page */
+#numgamePage body {
+    margin: auto;
+}
+
+#numgamePage .container-50 {
+    width: 50%;
+    margin: 0.2% auto 10px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#numgamePage button {
+    border: 1px solid rgb(0, 30, 255);
+    background-color: rgb(0, 229, 255);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#numgamePage button:hover {
+    font-weight: bolder;
+    background-color: rgb(0, 200, 255);
 }
