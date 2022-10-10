@@ -1,10 +1,113 @@
-body {
-	width: 100%;
-}
+/* 폰트
+헤드에 추가할 링크
+<link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Jua&family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&family=Poor+Story&display=swap" rel="stylesheet">
 
-#headbox {
+font-family: 'Cute Font', cursive;
+font-family: 'Jua', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Poor Story', cursive;
+ */
+
+/* body {
+    display: grid;
+    grid-template-rows: 90px 1fr;
+} */
+
+#bodybox {
+    width: 100%;
+    margin: 10px auto 10px auto;
 	border: 1px solid #aaa;
 }
+
+
+/* ######################################################### */
+/* headbox */
+#headbox {
+    max-width: 1000px;
+    width: 98%;
+    margin: 10px auto 10px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+
+    color: #000000;
+    text-align: center;
+    box-shadow: 0px 5px 5px 0px gray;
+
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+
+    font-size: 20px;
+    font-family: 'Jua', sans-serif;
+}
+
+#headbox h1 {
+    font-size: 24px;
+    font-family: 'Poor Story', cursive;
+    font-weight: bold;
+}
+
+#head-center {
+    cursor: pointer;
+}
+
+#head-left,
+#head-center,
+#head-right {
+    margin: auto;
+}
+
+#spartaicon {
+    width: 50px;
+}
+
+#headbox button {
+    border: none;
+    background-color: #fff;
+}
+
+#headbox button:hover {
+    font-weight: bolder;
+}
+
+/* ######################################################### */
+/* indexPage */
+#homebtn-wrap button {
+    width: 80%;
+    margin: 10px auto auto auto;
+    border-radius: 10px;
+
+    font-size: 24px;
+    font-family: 'Cute Font', cursive;
+}
+
+#indexPage .mycheetah {
+    width: 200px;
+}
+
+#indexPage #homebtn-wrap {
+    vertical-align: middle;
+}
+
+#indexPage #bodybox {
+    max-width: 700px;
+    width: 80%;
+    margin: 10px auto 10px auto;
+    /* border: 1px solid; */
+
+    color: #000000;
+    text-align: center;
+    /* box-shadow: 0px 0px 3px 0px gray; */
+
+    /* padding: 6px 12px; */
+    /* font-size: 20px; */
+    /* background: #4a4a4a; */
+    /* cursor: pointer; */
+}
+
+
 
 #test {
 	width: 90%;
@@ -28,7 +131,7 @@ body {
 
 #welcomeBox {
 	width: 400px;
-	/* border: 1px solid gray; */
+	border: 1px solid gray;
 	display: grid;
 	grid-template-columns: 1fr 100px;
 
