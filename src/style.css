@@ -10,113 +10,111 @@ font-family: 'Poor Story', cursive;
  */
 
 body {
-    /* display: grid; */
-    /* grid-template-rows: 90px 1fr; */
-    padding-top: 8%;
+	/* display: grid; */
+	/* grid-template-rows: 90px 1fr; */
+	/* padding-top: 8%; */
 }
 
 h1 {
-    font-family: 'Jua', sans-serif;
-    font-size:xx-large;
+	font-family: "Jua", sans-serif;
+	font-size: xx-large;
 }
-
 
 #bodybox {
-    max-width: 1000px;
-    width: 100%;
-    margin: 10px auto 10px auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+	max-width: 1000px;
+	width: 100%;
+	margin: 10px auto 10px auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	/* border: 1px solid #aaa; */
-    border-radius: 10px;
+	border-radius: 10px;
 
-    color: #000000;
-    text-align: center;
+	color: #000000;
+	text-align: center;
 }
-
 
 /* ######################################################### */
 /* header */
 #headbox {
-    position: fixed;
-    top: 0;
-    /* width: 100% */
-    left: 0;
-    right: 0;
+	/* position: fixed; */
+	/* top: 0; */
+	/* width: 100% */
+	/* left: 0; */
+	/* right: 0; */
 
-    max-width: 1000px;
-    width: 100%;
-    margin: 0.2% auto 10px auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid #aaa;
-    border-radius: 10px;
-    background-color: #fff;
+	max-width: 1000px;
+	width: 100%;
+	margin: 0.2% auto 10px auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #aaa;
+	border-radius: 10px;
+	background-color: #fff;
 
-    color: #000000;
-    text-align: center;
-    box-shadow: 0px 5px 5px 0px gray;
+	color: #000000;
+	text-align: center;
+	box-shadow: 0px 5px 5px 0px gray;
 
-    display: grid;
-    grid-template-columns: 100px 1fr 100px;
+	display: grid;
+	grid-template-columns: 100px 1fr 100px;
 }
 
 #headbox #head-center {
 	font-size: xx-large;
 
-    font-family: 'Poor Story', cursive;
-    font-weight: bolder;
-    cursor: pointer;
+	font-family: "Poor Story", cursive;
+	font-weight: bolder;
+	cursor: pointer;
 }
 
 #headbox #head-left,
 #headbox #head-center,
 #headbox #head-right {
-    margin: auto;
+	margin: auto;
 }
 
 #spartaicon {
-    width:50%;
+	width: 50%;
 }
 
 #headbox button {
-    border: none;
-    background-color: #fff;
+	border: none;
+	background-color: #fff;
 	font-size: x-large;
-    font-family: 'Jua', sans-serif;
+	font-family: "Jua", sans-serif;
 }
 
 #headbox button:hover {
-    font-weight: bolder;
+	font-weight: bolder;
 }
 
 /* ######################################################### */
 /* indexPage */
 #indexPage #welcomeBox {
 	margin: auto;
-    width: 70%;
+	width: 70%;
 	/* border: 1px solid gray; */
-    /* border-radius: 10px; */
+	/* border-radius: 10px; */
 
-    display: grid;
-    grid-template-columns: 5fr 2fr;
+	display: grid;
+	grid-template-columns: 5fr 2fr;
 
-    font-family: 'Nanum Gothic', sans-serif;
+	font-family: "Nanum Gothic", sans-serif;
 	font-size: large;
 }
 
 #indexPage #homebtn-wrap {
-    width: 70%;
-    margin: 50px auto auto auto;
+	width: 70%;
+	margin: 50px auto auto auto;
 }
 
 #homebtn-wrap button {
-    width: 80%;
-    margin: 10px auto auto auto;
-    border-radius: 10px;
+	width: 80%;
+	margin: 10px auto auto auto;
+	border-radius: 10px;
 
-    font-size: x-large;
-    font-family: 'Cute Font', cursive;
+	font-size: x-large;
+	font-family: "Cute Font", cursive;
 }
 
 /* #test {
@@ -137,33 +135,32 @@ h1 {
 
 /* mdm page */
 #mycheetah {
-	width:60%;
+	width: 60%;
 }
-
 
 /* number page */
 #numgamePage body {
-    margin: auto;
+	margin: auto;
 }
 
 #numgamePage .container-50 {
-    width: 50%;
-    margin: 0.2% auto 10px auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid #aaa;
-    border-radius: 10px;
-    background-color: #fff;
+	width: 50%;
+	margin: 0.2% auto 10px auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #aaa;
+	border-radius: 10px;
+	background-color: #fff;
 }
 
 #numgamePage button {
-    border: 1px solid rgb(0, 30, 255);
-    background-color: rgb(0, 229, 255);
-    border-radius: 10px;
-    cursor: pointer;
+	border: 1px solid rgb(0, 30, 255);
+	background-color: rgb(0, 229, 255);
+	border-radius: 10px;
+	cursor: pointer;
 }
 
 #numgamePage button:hover {
-    font-weight: bolder;
-    background-color: rgb(0, 200, 255);
+	font-weight: bolder;
+	background-color: rgb(0, 200, 255);
 }
