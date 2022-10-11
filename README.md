@@ -15,6 +15,5 @@ Thanks :)
 # My Links...
 - [My homepage](https://leeyeonjun85.github.io/home/)
 - [Development Log](./mdpages/Development%20Log.md)
-- [Mark Down](./mdpages/Mark%20Down.md)
-- [git](./mdpages/git.md)
+
 
