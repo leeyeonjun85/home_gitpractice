@@ -9,6 +9,7 @@
     - [MDN 'HTML 기본'](#mdn-html-기본)
     - [MDN 'CSS 기초'](#mdn-css-기초)
     - [MDN 'JavaScript 기본'](#mdn-javascript-기본)
+- ['연준이의 코딩 연습실' 작성]()
 ___
 ## MDN 'Web과 함께 시작하기'
 
@@ -37,6 +38,9 @@ ___
 
 ### MDN 'JavaScript 기본'
 - JavaScript에 대한 공부 내용은 [JavaScript.md](../JavaScript.md)에 따로 정리하자
+
+## '연준이의 코딩 연습실'
+- header만들기
 
 ## 링크
 - [이연준의 README](../../README.md)

@@ -1,7 +1,11 @@
 # CSS
 
 ## 목차
-
+- [CSS의 기본 특징](#css의-기본-특징)
+- [rule set 구조(간단히 rule)](#rule-set-구조간단히-rule)
+- [속성-박스](#속성-박스)
+- [body 외부 정렬하기](#body-외부-정렬하기)
+___
 ## CSS의 기본 특징
 - CSS (Cascading Style Sheets)
 - 웹페이지를 꾸미려고 작성하는 코드
