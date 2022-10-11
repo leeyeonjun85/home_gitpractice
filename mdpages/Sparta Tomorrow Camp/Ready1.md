@@ -38,5 +38,6 @@
 - aws, 가비아 구매 후 서버 배포
 
 ## 각종 링크
-- [사전캠프 1주차 완성 바로가기](http://leeyj85.shop/)
+- [이연준의 README](../../README.md)
 - [연준이의 코딩연습실](https://leeyeonjun85.github.io/home/)
+- [사전캠프 1주차 완성 바로가기](http://leeyj85.shop/)

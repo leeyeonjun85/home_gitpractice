@@ -9,15 +9,15 @@ font-family: 'Nanum Myeongjo', serif;
 font-family: 'Poor Story', cursive;
  */
 
-body {
+/* body { */
 	/* display: grid; */
 	/* grid-template-rows: 90px 1fr; */
 	/* padding-top: 8%; */
-}
+/* } */
 
 h1 {
 	font-family: "Jua", sans-serif;
-	font-size: xx-large;
+	font-size: x-large;
 }
 
 #bodybox {
@@ -60,7 +60,7 @@ h1 {
 }
 
 #headbox #head-center {
-	font-size: xx-large;
+	font-size: x-large;
 
 	font-family: "Poor Story", cursive;
 	font-weight: bolder;
