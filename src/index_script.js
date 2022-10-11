@@ -11,7 +11,7 @@ function setUserName() {
 	let myName = prompt("이름을 알려주세요.");
 	if (!myName || myName === null) {
 		// setUserName();
-		alert("이름을 입력하세요.");
+		alert("알려주기 싫은가 보네요..ㅠㅠ");
 	} else {
 		localStorage.setItem("name", myName);
 		myWelcomeMsg.innerHTML = "안녕하세요, " + myName + "님!";

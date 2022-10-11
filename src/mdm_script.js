@@ -11,11 +11,14 @@ myImage.onclick = function () {
 	let mySrc = myImage.getAttribute("src");
 	if (mySrc === img1) {
 		myImage.setAttribute("src", img2);
+		myImage.setAttribute("alt", "A sleeping cheetah");
 	}
 	if (mySrc === img2) {
 		myImage.setAttribute("src", img3);
+		myImage.setAttribute("alt", "A running cheetah");
 	}
 	if (mySrc === img3) {
 		myImage.setAttribute("src", img1);
+		myImage.setAttribute("alt", "A standing and looking up cheetah");
 	}
 };
