@@ -3,11 +3,12 @@
 ## 2주차 목차
 - MDN 'Web' 공부하기
   - [MDN 'Web과 함께 시작하기'](#mdn-web과-함께-시작하기)
-    - MDN '기본 소프트웨어 설치하기'
-    - MDN '웹사이트의 외관은 어떻게 할까요?'
-    - MDN '파일 다루기'
-    - MDN 'HTML 기본'
-    - MDN 'CSS 기초'
+    - [MDN '기본 소프트웨어 설치하기'](#mdn-기본-소프트웨어-설치하기)
+    - [MDN '웹사이트의 외관은 어떻게 할까요?'](#mdn-웹사이트의-외관은-어떻게-할까요)
+    - [MDN '파일 다루기'](#mdn-파일-다루기)
+    - [MDN 'HTML 기본'](#mdn-html-기본)
+    - [MDN 'CSS 기초'](#mdn-css-기초)
+    - [MDN 'JavaScript 기본'](#mdn-javascript-기본)
 ___
 ## MDN 'Web과 함께 시작하기'
 
@@ -29,7 +30,13 @@ ___
   - 스타일은 한 파일에 모아서 사용하자
 
 ### MDN 'HTML 기본'
-- HTML에 대한 공부 내용은 [HTML txt](../HTML.md)에 따로 정리하자
+- HTML에 대한 공부 내용은 [HTML.md](../HTML.md)에 따로 정리하자
+
+### MDN 'CSS 기초'
+- CSS에 대한 공부 내용은 [CSS.md](../CSS.md)에 따로 정리하자
+
+### MDN 'JavaScript 기본'
+- JavaScript에 대한 공부 내용은 [JavaScript.md](../JavaScript.md)에 따로 정리하자
 
 ## 링크
 - [이연준의 README](../../README.md)
