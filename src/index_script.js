@@ -7,6 +7,10 @@ myButton.onclick = function () {
 	setUserName();
 };
 
+window.onload = function () {
+	setUserName();
+};
+
 function setUserName() {
 	let myName = prompt("이름을 알려주세요.", "정우성");
 	if (!myName || myName === null) {
