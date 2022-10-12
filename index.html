@@ -25,34 +25,25 @@
 		rel="stylesheet" />
 	<!-- 호환설정 -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<!-- 헤더 -->
-	<script src="./src/header.js"></script>
 	<!-- 스타일 -->
 	<link href="./src/style.css" rel="stylesheet" type="text/css" />
 	<!-- 자바스크립트 -->
-	<script src="./src/index_script.js" defer></script>
+	<script src="./src/script.js" defer></script>
 	<title>이연준의 코딩 연습실</title>
 </head>
 
 <body>
 	<div id="headbox">
-		<div id="head-left">
-			<button onClick="location.href='./index.html'">
-				Go🏠
-			</button>
-		</div>
-		<div id="head-center" onClick="location.href='https://github.com/leeyeonjun85/home'"></div>
-		<div id="head-right">
-			<button onClick="location.href='https://spartacodingclub.kr/'">
-				Go<img id="spartaicon" src="https://spartacodingclub.kr/v5/icons/logo_v2.svg" />
-			</button>
-		</div>
+		<div id="head-left"></div>
+		<div id="head-center"></div>
+		<img id="spartaicon" />
 	</div>
+
 	<div id="bodybox">
 		<div id="welcomeBox">
-			<div id="welcomeMsg">안녕하세요!</div>
-			<div id="userNameBtn">
-				<button class="btn btn-primary">
+			<div id="welcomeMsg"></div>
+			<div>
+				<button id="userNameBtn" class="btn btn-primary" onclick=setUserName()>
 					이름을 알려주세요
 				</button>
 			</div>

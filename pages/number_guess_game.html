@@ -30,12 +30,16 @@
 	<!-- 스타일 -->
 	<link href="../src/style.css" rel="stylesheet" type="text/css" />
 	<!-- 자바스크립트 -->
-	<script src="../src/numgg_script.js" defer></script>
+	<script src="../src/script.js" defer></script>
 	<title>이연준의 코딩 연습실</title>
 </head>
 
 <body>
-	<header-component></header-component>
+	<div id="headbox">
+		<div id="head-left"></div>
+		<div id="head-center"></div>
+		<img id="spartaicon" />
+	</div>
 
 	<div id="bodybox">
 		<h1>랜덤 숫자 맞히기 게임</h1>
@@ -50,7 +54,7 @@
 			<div class="form">
 				<label for="guessField">1~100 숫자를 넣으세요 </label>
 				<input type="number" min="1" max="100" required id="guessField" class="guessField">
-				<input type="submit" value="맞나?" class="guessSubmit">
+				<input type="submit" value="맞나?" class="guessSubmit" onclick=checkGuess()>
 			</div>
 
 			<div class="resultParas">
