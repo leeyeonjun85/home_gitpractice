@@ -51,7 +51,6 @@ function goSparta () {
 
 let myWelcomeMsg = document.getElementById("welcomeMsg");
 let myButton = document.getElementById("userNameBtn");
-myWelcomeMsg.textContent = `안녕하세요~`
 
 function setUserName() {
 	let myName = prompt(
