@@ -12,7 +12,9 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 function setUserName() {
-	let myName = prompt("이름을 알려주세요.", "정우성");
+	let myName = prompt(
+		`안녕하세요~ 저는 이연준이에요.
+당신의 이름을 알려주세요.`, "정우성");
 	if (!myName || myName === null) {
 		alert("알려주기 싫은가 보네요..ㅠㅠ");
 		myName = "익명의 방문자..";
