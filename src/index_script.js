@@ -8,10 +8,19 @@ myButton.onclick = function () {
 };
 
 function setUserName() {
-	let myName = prompt("이름을 알려주세요.");
+	let myName = prompt("이름을 알려주세요.", "정우성");
 	if (!myName || myName === null) {
-		// setUserName();
 		alert("알려주기 싫은가 보네요..ㅠㅠ");
+		myName = "익명의 방문자..";
+		myWelcomeMsg.innerHTML = "안녕하세요, " + myName + "님!";
+	} if (myName === "정우성") {
+		let result = confirm("헐.. 진짜 정우성 맞아요?");
+		if (result == true) {
+			localStorage.setItem("name", myName);
+			myWelcomeMsg.innerHTML = "안녕하세요, " + myName + "님!";
+		} else {
+			alert("되고싶은 사람 말고... 당신의 이름을 알려주세요");
+		}
 	} else {
 		localStorage.setItem("name", myName);
 		myWelcomeMsg.innerHTML = "안녕하세요, " + myName + "님!";

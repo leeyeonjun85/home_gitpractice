@@ -29,18 +29,57 @@ let myHeading = document.querySelector('h1');
 myHeading.textContent = 'Hello world!';
 ```
 
-## 변수
+## 변수와 상수
+- 변수와 상수는 모두 정보를 저장하는 '저장소'로 쓰임
+- 변수(variable)는 저장하는 값이 변화할 수 있는 저장소
+- 상수(constant)는 저장하는 값이 변화하지 않는 저장소
+
+### 변수(Variables)
 - 변수(Variables)는 어떤 값을 저장할 수 있는 컨테이너 역할
 - 변수를 선언할 때는 `var` 또는 `let` 을 사용
+  - `var`는 오래된 코딩 방식
+- `let`으로 변수 'message'를 생성(선언)하고, 변수 meassage 안에 'Hello'라는 값을 할당
 ```js
-let myVariable;
+let message;
+message = 'Hello'; // 문자열을 저장합니다.
 ```
+
 - 변수의 자료형
   - String : 문자열
   - Number : 숫자
   - Boolean : true/false
   - Array : 배열
   - Object : 객체
+
+- 변수 명명 규칙
+  - 변수명에 `$`, `_` 사용 가능
+  - 변수명은 숫자로 시작 불가능
+  - 하이픈(`-`)은 변수명에 사용 불가능
+  - 대소문자는 구별 됨
+  - 한문, 히브리어 등 사용 가능
+  - 변수명에 '예약어(reserved name)' 사용 불가능
+    - 예약어 : let, class, return, function
+  - 엄격모드(use strict)에서는 `let`으로 변수를 선언해야 하지만, 비엄격모드에서는 `let`을 생략 가능
+    - 엄격모드를 고려해서 일반적으로 `let`을 생략하지 않음
+
+### 상수(Constants)
+- 상수(Constants)는 변화하지 않는 변수
+- 변수는 `let`으로 선언하고, 상수는 `const`로 선언
+- 관습적으로 기억하기 힘든 값을 대문자상수로 할당해 사용함
+```js
+const COLOR_RED = "#F00";
+const COLOR_GREEN = "#0F0";
+const COLOR_BLUE = "#00F";
+const COLOR_ORANGE = "#FF7F00";
+
+// 색상을 고르고 싶을 때 별칭을 사용할 수 있게 되었습니다.
+let color = COLOR_ORANGE;
+alert(color); // #FF7F00
+```
+- 대문자상수의 장점
+  - COLOR_ORANGE는 "#FF7F00"보다 기억하기가 훨씬 쉽습니다.
+  - COLOR_ORANGE를 사용하면 "#FF7F00"를 사용하는 것보다 오타를 낼 확률이 낮습니다.
+  - COLOR_ORANGE가 #FF7F00보다 훨씬 유의미하므로, 코드 가독성이 증가합니다.
 
 ## 연산자
 - 더하기(`+`) : 두 수를 합치거나, 또는 두 문자열을 하나로 붙일 때 사용
