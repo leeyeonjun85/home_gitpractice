@@ -145,13 +145,13 @@ h1 {
 }
 
 /* ######################################################### */
-/* mdm page */
+/* mdmPage */
 #mycheetah {
 	width: 60%;
 }
 
 /* ######################################################### */
-/* number page */
+/* numgamePage */
 #numgamePage body {
 	margin: auto;
 }
@@ -179,8 +179,41 @@ h1 {
 }
 
 /* ######################################################### */
-/* number page */
+/* testPage */
+#testPage #inputBox {
+	width: 50%;
+	margin: 0.2% auto 10px auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #aaa;
+	border-radius: 10px;
+	background-color: #fff;
+}
 
+#testPage #inputBox input {
+	display: block;
+}
+
+#testPage #tableBox {
+	width: 50%;
+	margin: 0.2% auto 10px auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #aaa;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+#testPage #testTable {
+	width: 50%;
+	margin: 0.2% auto 10px auto;
+}
+
+#testPage #testTable th,
+#testPage #testTable tr,
+#testPage #testTable td {
+	border: 1px solid #aaa;
+}
 
 /* ######################################################### */
 /* 모바일용 */
