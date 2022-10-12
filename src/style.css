@@ -107,6 +107,10 @@ h1 {
 	font-size: large;
 }
 
+#indexPage #userNameBtn {
+
+}
+
 #indexPage #homebtn-wrap {
 	width: 70%;
 	margin: 50px auto auto auto;
@@ -190,5 +194,18 @@ h1 {
 		background-color: #fff;
 		font-size: large;
 		font-family: "Jua", sans-serif;
+	}
+
+	#indexPage #welcomeBox {
+		margin: auto;
+		width: 70%;
+		/* border: 1px solid gray; */
+		/* border-radius: 10px; */
+	
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+	
+		font-family: "Nanum Gothic", sans-serif;
+		font-size: large;
 	}
 }
