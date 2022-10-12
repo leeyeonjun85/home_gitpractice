@@ -8,9 +8,7 @@ headerTemplate.innerHTML = `
 			Go🏠
 		</button>
 	</div>
-	<div id="head-center" onClick="location.href='https://github.com/leeyeonjun85/home'">
-		연준이의 코딩 연습실✍️
-	</div>
+	<div id="head-center" onClick="location.href='https://github.com/leeyeonjun85/home'"></div>
 	<div id="head-right">
 		<button onClick="location.href='https://spartacodingclub.kr/'">
 			Go<img id="spartaicon" src="https://spartacodingclub.kr/v5/icons/logo_v2.svg" />

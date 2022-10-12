@@ -10,9 +10,9 @@ font-family: 'Poor Story', cursive;
  */
 
 /* body { */
-	/* display: grid; */
-	/* grid-template-rows: 90px 1fr; */
-	/* padding-top: 8%; */
+/* display: grid; */
+/* grid-template-rows: 90px 1fr; */
+/* padding-top: 8%; */
 /* } */
 
 h1 {
@@ -65,6 +65,10 @@ h1 {
 	font-family: "Poor Story", cursive;
 	font-weight: bolder;
 	cursor: pointer;
+}
+
+#headbox #head-center:before {
+	content: "연준이의 코딩 연습실✍️";
 }
 
 #headbox #head-left,
@@ -163,4 +167,28 @@ h1 {
 #numgamePage button:hover {
 	font-weight: bolder;
 	background-color: rgb(0, 200, 255);
+}
+
+
+
+/* 모바일용 */
+@media(max-width:550px) {
+	#headbox #head-center {
+		font-size: large;
+	
+		font-family: "Poor Story", cursive;
+		font-weight: bolder;
+		cursor: pointer;
+	}
+
+	#headbox #head-center:before {
+		content: "연준이의 코딩 연습실";
+	}
+
+	#headbox button {
+		border: none;
+		background-color: #fff;
+		font-size: large;
+		font-family: "Jua", sans-serif;
+	}
 }
