@@ -399,8 +399,6 @@ View 영역의 항목을 그대로 붙여넣거나 HTML 내보내기 등으로 �
 
 ***** 
 
-# P.S.
-최근에는 [Notion](https://www.notion.so/product) 을 조금씩 사용중이다. Notion 에서 작성한 문서는 Atom(<https://atom.io/>), Visual Studio Code(<https://code.visualstudio.com/>), Notepad++(<https://notepad-plus-plus.org/>)텍스트 편집기에 복붙(복사하고 붙여넣기)하면 마크다운문법으로 작성된 문장이 기입되고 이지윅 에디터를 제공하는 웹에디터에 붙여넣기 하면 거의 완벽한 형태로 복사된다. 그래서 애용중이다.
 
 ## ○ 참고문서
 * [78 Tools for writing and previewing Markdown](http://mashable.com/2013/06/24/markdown-tools/)
