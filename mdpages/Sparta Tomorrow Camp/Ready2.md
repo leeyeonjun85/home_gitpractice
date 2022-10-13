@@ -41,6 +41,41 @@ ___
 
 ## '연준이의 코딩 연습실'
 - header만들기
+```js
+const headerTemplate = document.createElement("template");
+headerTemplate.innerHTML = `
+<link href="../src/style.css" rel="stylesheet">
+
+<div id="headbox">
+	<div id="head-left">Go🏠</div>
+	<div id="head-center">연준이의 코딩 연습실</div>
+	<img id="spartaicon"/>
+</div>
+`;
+
+class Header extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		const shadowRoot = this.attachShadow({ mode: "open" });
+		shadowRoot.appendChild(headerTemplate.content);
+	}
+}
+
+customElements.define("header-component", Header);
+```
+- 일단 만들기는 했는데 문제가 있음
+  - root폴더에 있는 index.html과 pages폴더에 있는 하위 페이지에 동일하게 적용시키기가 어려움
+  - 포기...나중에 다시 해보자...ㅠ
+- 1번 연습실, 2번 연습실, 3번 연습실로 메뉴 구성 변경
+  - [1번 연습실](https://leeyeonjun85.github.io/home/pages/mdm%20prac.html)
+    - 이미지 클릭시 이미지 변경하고, 이미지에 맞는 이름이 적용되 도록 함
+  - [2번 연습실](https://leeyeonjun85.github.io/home/pages/number_guess_game.html)
+    - ['랜덤 숫자 맞히기 게임'](https://leeyeonjun85.github.io/home/pages/number_guess_game.html)을 [MDN JavaScript](https://developer.mozilla.org/ko/docs/Learn/JavaScript/First_steps/A_first_splash)에서 보고 만들기
+  - [3번 연습실](https://leeyeonjun85.github.io/home/pages/test_page.html)
+    - 각종 input type 연습
+    - 테이블 만들기 연습
 
 ## 링크
 - [이연준의 README](../../README.md)
