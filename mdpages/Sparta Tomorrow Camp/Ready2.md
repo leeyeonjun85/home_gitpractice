@@ -65,7 +65,7 @@ class Header extends HTMLElement {
 
 customElements.define("header-component", Header);
 ```
-- 일단 만들기는 했는데 문제가 있음
+- javascript로 react 비슷하게 컴포넌트처럼 활용할 수 있다는 것을 알고 구글링해서 따라 만들어 봤는데... 문제가 있음
   - root폴더에 있는 index.html과 pages폴더에 있는 하위 페이지에 동일하게 적용시키기가 어려움
   - 포기...나중에 다시 해보자...ㅠ
 - 1번 연습실, 2번 연습실, 3번 연습실로 메뉴 구성 변경
