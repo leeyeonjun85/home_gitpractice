@@ -406,7 +406,8 @@ if (iceCream === 'chocolate') {
 
 ### 논리연산자
 - 논리연산자에는 `OR:||, AND:&&, NOT:!` 이 있음
-- OR : `||`
+
+#### OR : `||`
   - 전통적인 프로그래밍에서 OR 연산자는 불린값을 조작하는 데 쓰임
 - OR연산자는 첫 번째 truthy를 찾는 용도로 쓰임
 ```js
@@ -426,7 +427,172 @@ alert( firstName || lastName || nickName || "익명"); // 바이올렛
 ```
 - 위에서는 비어있지 않은 `nickName`의 값이 출력 됨
 - 단락평가
-  - `OR : ||`은 왼쪽부터 시작해서 오른쪽으로 평가를 진행하고, truthy를 만나면 나머지 값들은 건드리지 않은 채 평가를 멈추는데, 이를 **'단락 평가'**라고 함
+  - `OR : ||`은 왼쪽부터 시작해서 오른쪽으로 평가를 진행하고, truthy를 만나면 나머지 값들은 건드리지 않은 채 평가를 멈추는데, 이를 **'단락 평가'** 라고 함
+```js
+true || alert("not printed");
+false || alert("printed");
+```
+- 위 예시에서 첫 번째 줄의 `||` 연산자는 `true`를 만나자마자 평가를 멈추기 때문에 alert가 실행되지 않음
+  - 두 번째 줄에서 `false`는 `falsy`한 값이기 때문에 지나가고, `alert("printed")`가 실행 됨
+
+#### AND : `&&`
+- 두 개의 [앰퍼샌드(ampersand : &, 앤드 기호)](https://ko.wikipedia.org/wiki/%EC%95%B0%ED%8D%BC%EC%83%8C%EB%93%9C)를 연달아 쓰면 `AND 연산자(&&)`를 만들 수 있음
+- 전통적인 프로그래밍에서 AND 연산자는 두 피연산자가 모두가 참일 때 true를 반환
+- 첫 번째 falsy를 찾는 AND 연산자 ‘&&’
+```js
+alert( 1 && 2 && null && 3 ); // 첫번째 falsy, null
+alert( 1 && 2 && 3 ); // 마지막 값, 3
+```
+
+#### NOT : `!`
+- 논리 연산자 NOT은 느낌표 !를 써서 만들 수 있음
+```js
+alert( !true ); // false
+alert( !0 ); // true
+```
+- NOT을 두 개 연달아 사용(!!)하면 값을 불린형으로 변환
+```js
+alert( !!"non-empty string" ); // true
+alert( !!null ); // false
+```
+- 내장 함수 Boolean을 사용하면 !!을 사용한 것과 같은 결과를 도출할 수 있음
+```js
+alert( Boolean("non-empty string") ); // true
+alert( Boolean(null) ); // false
+```
+
+### nullish 변합 연산자 : `??`
+- nullish 병합 연산자(nullish coalescing operator) `??`를 사용하면 짧은 문법으로 여러 피연산자 중 그 값이 ‘확정되어있는’ 변수를 찾을 수 있음
+- `x = (a !== null && a !== undefined) ? a : b;`의 코드는 `a ?? b;`로 나타낼 수 있음
+- ??는 &&나 ||와 함께 사용하지 못함
+- ??의 연산자 우선순위는 5로 꽤 낮기 때문에, 괄호를 사용하여 우선순위를 조정해줘야 함
+
+### switch 문법
+- 복수의 `if` 조건문은 `switch` 문으로 바꿀 수 있음
+```js
+let a = 2 + 2;
+
+switch (a) {
+  case 3:
+    alert( '비교하려는 값보다 작습니다.' );
+    break;
+  case 4:
+    alert( '비교하려는 값과 일치합니다.' );
+    break;
+  case 5:
+    alert( '비교하려는 값보다 큽니다.' );
+    break;
+  default:
+    alert( "어떤 값인지 파악이 되지 않습니다." );
+}
+```
+- switch문은 `일치연산자(===)`로 조건을 확인하기 때문에 자료형도 일치해야 함
+```js
+let arg = prompt("값을 입력해주세요.");
+switch (arg) {
+  case '0':
+  case '1':
+    alert( '0이나 1을 입력하셨습니다.' );
+    break;
+
+  case '2':
+    alert( '2를 입력하셨습니다.' );
+    break;
+
+  case 3:
+    alert( '이 코드는 절대 실행되지 않습니다!' );
+    break;
+  default:
+    alert( '알 수 없는 값을 입력하셨습니다.' );
+}
+```
+- 위 예시에서 `prompt`함수는 사용자가 입력필드에 기재한 값을 **문자열**로 반환하기 때문에 `case 3:` (숫자 3)을 입력하면 falsy로 인식하여 default로 넘어감
+
+## 반복문(loop)
+### while 반복문
+```js
+let i = 0;
+while (i < 3) { // 0, 1, 2가 출력됩니다.
+  alert( i );
+  i++;
+}
+```
+- 반복문이 한 번 실행되느 것을 `이터레이션(iteration: 반복)`이라고 함
+- 위 예시에서 반복문이 세 번의 이터레이션을 만듬
+```js
+let i = 3;
+while (i) { // i가 0이 되면 조건이 falsy가 되므로 반복문이 멈춥니다.
+  alert( i );
+  i--;
+}
+```
+- 반복문 본문이 한 줄짜리 문이라면 대괄호 {…}를 생략할 수 있음
+```js
+let i = 3;
+while (i) alert(i--);
+```
+### do... while 반복문
+- `o..while` 문법을 사용하면 condition을 반복문 본문 아래로 옮길 수 있음
+```js
+let i = 0;
+do {
+  alert( i );
+  i++;
+} while (i < 3);
+```
+- `do..while` 문법은 조건이 truthy 인지 아닌지에 상관없이, 본문을 최소한 한 번이라도 실행하고 싶을 때만 사용
+
+### for 반복문
+```js
+for (let i = 0; i < 3; i++) { 
+  alert(i);
+}
+// 0, 1, 2가 출력됩니다.
+```
+- 반복문의 조건이 falsy가 되면 반복문이 종료
+- 특별한 지시자인 break를 사용하면 언제든 원하는 때에 반복문을 빠져나올 수 있음
+```js
+let sum = 0;
+
+while (true) {
+  let value = +prompt("숫자를 입력하세요.", '');
+
+  if (!value) break; // (*)
+
+  sum += value;
+}
+alert( '합계: ' + sum );
+```
+- continue는 전체 반복문을 멈추지 않고, 대신에 현재 실행 중인 이터레이션을 멈추고 반복문이 다음 이터레이션을 강제로 실행함
+```js
+for (let i = 0; i < 10; i++) {
+
+  // 조건이 참이라면 남아있는 본문은 실행되지 않습니다.
+  if (i % 2 == 0) continue;
+
+  alert(i); // 1, 3, 5, 7, 9가 차례대로 출력됨
+}
+```
+- `?` 오른쪽엔 `break`나 `continue`가 올 수 없음
+
+### 레이블을 이용하여 break, continue 작성하기
+- 레이블을 이용하여 여러 개의 중첩 반복문을 한 번에 빠져나오기
+```js
+outer: for (let i = 0; i < 3; i++) {
+
+  for (let j = 0; j < 3; j++) {
+
+    let input = prompt(`(${i},${j})의 값`, '');
+
+    // 사용자가 아무것도 입력하지 않거나 Cancel 버튼을 누르면 두 반복문 모두를 빠져나옵니다.
+    if (!input) break outer; // (*)
+
+    // 입력받은 값을 가지고 무언가를 함
+  }
+}
+alert('완료!');
+```
+- break와 continue는 **반복문 안**에서만 사용할 수 있고, 레이블은 반드시 break이나 continue 지시자 위에 있어야 함
 
 
 ## 함수
