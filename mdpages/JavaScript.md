@@ -88,7 +88,7 @@ alert(color); // #FF7F00
 - 동등(`===`) : 두 값이 서로 같은지 테스트하여 `true/false`(불리언) 결과를 반환
 - 부정, 다름(`!, !==`) : 연산자 뒤쪽의 값에 대해 논리적으로 반대인 값을 반환
 
-### [연산자 우선순위 : MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+### 연산자 우선순위[(출처 : MDN)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 - 우선순위 숫자가 클 수록 우선 순위가 높음(먼저 실행 됨)
 <table class="fullwidth-table">
   <tbody>
