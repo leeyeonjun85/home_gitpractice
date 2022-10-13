@@ -608,6 +608,138 @@ function multiply(num1,num2) {
   return result;
 }
 ```
+### 인수와 매개변수
+```js
+function showMessage(from, text) { // 인자: from, text
+  alert(from + ': ' + text);
+}
+
+showMessage('Ann', 'Hello!'); // Ann: Hello! (*)
+showMessage('Ann', "What's up?"); // Ann: What's up? (**)
+```
+- 위 예시에서 (*), (**)에서 쓰인 'Ann', 'Hello!', 'Ann', "What's up?"은 `인수(argument)`
+- `finction showMessage(from, text) {`에서 쓰인 from, text는 `인자(parameter: 매개변수)`
+
+### 반환 값
+- 함수를 호출했을 때 함수를 호출한 그곳에 특정 값을 반환하게 할 수 있는데, 이때 이 특정 값을 **반환 값(return value)**이라고 부름
+```js
+function sum(a, b) {
+  return a + b;
+}
+
+let result = sum(1, 2);
+alert( result ); // 3
+```
+- 여러 개의 return이 올 수 있음
+```js
+function checkAge(age) {
+  if (age >= 18) {
+    return true;
+  } else {
+    return confirm('보호자의 동의를 받으셨나요?');
+  }
+}
+
+let age = prompt('나이를 알려주세요', 18);
+
+if ( checkAge(age) ) {
+  alert( '접속 허용' );
+} else {
+  alert( '접속 차단' );
+}
+```
+- 소수(prime number) 찾기 함수
+```js
+function showPrimes(n) {
+
+  for (let i = 2; i < n; i++) {
+    if (!isPrime(i)) continue;
+
+    console.log(i);  // a prime
+  }
+}
+
+function isPrime(n) {
+  for (let i = 2; i < n; i++) {
+    if ( n % i == 0) return false;
+  }
+  return true;
+}
+showPrimes(99)
+```
+
+### 함수 표현식과 함수 선언
+- 함수 선언(Function Declaration)
+```js
+function sayHi() {
+  alert( "Hello" );
+}
+```
+- 함수 표현식(Function Expression)
+```js
+let sayHi = function() {
+  alert( "Hello" );
+};
+```
+- 세미 콜론(`;`)
+  - 함수 선언문에서는 생략해도 되지만, 함수 표현식에서는 붙여줘야 함
+  - 함수 선언문은 `if { ... }, for { }, function f { }` 같이 중괄호로 만든 코드 블록 끝이기 때문에 `;`이 없어도 됨
+  - 함수 표현식은 **'코드 블록'** 이 아니고 값처럼 취급되어 변수에 할당되는 **'구문'** 이기 때문에 구문의 끝을 의미하는 `;`을 붙여야 함
+
+### 콜백 함수
+```js
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+function showOk() {
+  alert( "동의하셨습니다." );
+}
+
+function showCancel() {
+  alert( "취소 버튼을 누르셨습니다." );
+}
+
+// 사용법: 함수 showOk와 showCancel가 ask 함수의 인수로 전달됨
+ask("동의하십니까?", showOk, showCancel);
+```
+- 함수 ask의 인수, `showOk`와 `showCancel`은 콜백 함수 또는 콜백이라고 불림
+
+### 화살표 함수
+```js
+let func = (arg1, arg2, ...argN) => expression
+```
+```js
+let func = function(arg1, arg2, ...argN) {
+  return expression;
+};
+```
+- 위의 두 예시는 같은 내용임
+```js
+let sum = (a, b) => a + b;
+
+/* 위 화살표 함수는 아래 함수의 축약 버전입니다.
+
+let sum = function(a, b) {
+  return a + b;
+};
+*/
+
+alert( sum(1, 2) ); // 3
+```
+- 본문이 여러 줄인 화살표 함수
+```js
+let sum = (a, b) => {  // 중괄호는 본문 여러 줄로 구성되어 있음을 알려줍니다.
+  let result = a + b;
+  return result; // 중괄호를 사용했다면, return 지시자로 결괏값을 반환해주어야 합니다.
+};
+
+alert( sum(1, 2) ); // 3
+```
+
+
+
 
 ## 이벤트
 ### 클릭이벤트
