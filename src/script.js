@@ -14,7 +14,7 @@ let headLeft = document.getElementById("head-left");
 headLeft.textContent = "Go🏠"
 
 headLeft.onclick = function () {
-	goHome();
+  goHome();
 };
 
 function goHome () {
