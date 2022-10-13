@@ -401,9 +401,36 @@ if (iceCream === 'chocolate') {
   alert('Awwww, but chocolate is my favorite...');
 }
 ```
+- `숫자 0, 빈 문자열"", null, undefined, NaN`은 불린형으로 변환 시 모두 `false`가 되는데, 이런 값들은 `‘falsy(거짓 같은)’` 값이라고 불림
+- 이 외의 값은 불린형으로 변환시 `true`가 되므로 `‘truthy(참 같은)’` 값이라고 부름
+
+### 논리연산자
+- 논리연산자에는 `OR:||, AND:&&, NOT:!` 이 있음
+- OR : `||`
+  - 전통적인 프로그래밍에서 OR 연산자는 불린값을 조작하는 데 쓰임
+- OR연산자는 첫 번째 truthy를 찾는 용도로 쓰임
+```js
+alert( 1 || 0 ); // 1 (1은 truthy임)
+
+alert( null || 1 ); // 1 (1은 truthy임)
+alert( null || 0 || 1 ); // 1 (1은 truthy임)
+
+alert( undefined || null || 0 ); // 0 (모두 falsy이므로, 마지막 값을 반환함)
+```
+```js
+let firstName = "";
+let lastName = "";
+let nickName = "바이올렛";
+
+alert( firstName || lastName || nickName || "익명"); // 바이올렛
+```
+- 위에서는 비어있지 않은 `nickName`의 값이 출력 됨
+- 단락평가
+  - `OR : ||`은 왼쪽부터 시작해서 오른쪽으로 평가를 진행하고, truthy를 만나면 나머지 값들은 건드리지 않은 채 평가를 멈추는데, 이를 **'단락 평가'**라고 함
+
 
 ## 함수
--함수(Functions)는 재사용하기를 원하는 기능을 담는 방법
+- 함수(Functions)는 재사용하기를 원하는 기능을 담는 방법
 ```js
 alert('hello!');
 ```
