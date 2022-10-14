@@ -740,6 +740,16 @@ alert( sum(1, 2) ); // 3
 
 
 
+## 심볼형
+- 심볼(symbol)은 유일한 식별자(unique identifier)를 만들고 싶을 때 사용
+```js
+let id1 = Symbol("id");
+let id2 = Symbol("id");
+
+alert(id1 == id2); // false
+```
+
+
 
 ## 이벤트
 ### 클릭이벤트
