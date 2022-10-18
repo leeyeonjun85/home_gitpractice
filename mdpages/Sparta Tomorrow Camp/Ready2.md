@@ -9,9 +9,10 @@
     - [MDN 'HTML 기본'](#mdn-html-기본)
     - [MDN 'CSS 기초'](#mdn-css-기초)
     - [MDN 'JavaScript 기본'](#mdn-javascript-기본)
-- ['연준이의 코딩 연습실' 작성]()
+- ['연준이의 코딩 연습실' 작성](#연준이의-코딩-연습실)
+- [My Links...](#my-links)
 ___
-## MDN 'Web과 함께 시작하기'
+## MDN ['Web과 함께 시작하기']((https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web))
 
 ### MDN '기본 소프트웨어 설치하기'
 - 코드 편집기
@@ -77,8 +78,10 @@ customElements.define("header-component", Header);
     - 각종 input type 연습
     - 테이블 만들기 연습
 
-## 링크
-- [이연준의 README](../../README.md)
-- [연준이의 코딩연습실](https://leeyeonjun85.github.io/home/)
-- [사전캠프 1주차 완성 바로가기](http://leeyj85.shop/)
-- [MDN 'Web과 함께 시작하기'](https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web)
+
+## My Links...
+- [My profile](https://github.com/leeyeonjun85)
+- [My homepage](https://leeyeonjun85.github.io/home/)
+- [Development Log](https://github.com/leeyeonjun85/home/blob/main/mdpages/Development%20Log.md)
+- [개발일지 : 스파르타 내배캠 사전캠프 1주차](https://github.com/leeyeonjun85/home/blob/main/mdpages/Sparta%20Tomorrow%20Camp/Ready1.md)
+- e-mail : leeyeonjun85@gmail.com

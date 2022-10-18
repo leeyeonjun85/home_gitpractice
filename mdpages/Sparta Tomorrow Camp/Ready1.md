@@ -13,7 +13,7 @@
     - 핑클 팬명록
     - 연준이의 코딩연습실
   - [서버에 배포](#서버에-배포)
-  - [각종 링크](#각종-링크)
+  - [My Links...](#my-links)
 ___
 ## git 개발일지 작성
 - git은 코드를 보관하고 간단히 편집하기 좋음
@@ -36,8 +36,11 @@ ___
 
 ## 서버에 배포
 - aws, 가비아 구매 후 서버 배포
-
-## 각종 링크
-- [이연준의 README](../../README.md)
-- [연준이의 코딩연습실](https://leeyeonjun85.github.io/home/)
 - [사전캠프 1주차 완성 바로가기](http://leeyj85.shop/)
+
+## My Links...
+- [My profile](https://github.com/leeyeonjun85)
+- [My homepage](https://leeyeonjun85.github.io/home/)
+- [Development Log](https://github.com/leeyeonjun85/home/blob/main/mdpages/Development%20Log.md)
+- [개발일지 : 스파르타 내배캠 사전캠프 1주차](https://github.com/leeyeonjun85/home/blob/main/mdpages/Sparta%20Tomorrow%20Camp/Ready1.md)
+- e-mail : leeyeonjun85@gmail.com
