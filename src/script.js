@@ -76,6 +76,15 @@ function setUserName() {
 	}
 }
 
+// '스파르타 코딩 연습실' 링크 열기
+// function goYeonjunApp () {
+// 	window.open('https://play.google.com/store/apps/details?id=com.myhoneytip.lyj');
+// };
+
+// '이연준의 꿀팁 앱' 링크 열기
+function goYeonjunApp () {
+	window.open('https://play.google.com/store/apps/details?id=com.myhoneytip.lyj');
+};
 
 
 ///////////////////////////////////////////////////////////
