@@ -26,11 +26,7 @@ let headCenter = document.getElementById("head-center");
 headCenter.textContent = "연준이의 코딩 연습실"
 
 headCenter.onclick = function () {
-	goMygithub();
-};
-
-function goMygithub () {
-	window.open('https://github.com/leeyeonjun85/home');
+	goHome();
 };
 
 // 스파르타 아이콘 클릭시 스파르타 링크
