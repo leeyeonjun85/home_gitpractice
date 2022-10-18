@@ -2,8 +2,7 @@
 
 ## 목차
 - ['모던 JavaScript 튜토리얼'에서 JavaScript 공부하기](#모던-javascript-튜토리얼에서-javascript-공부하기)
-  - [소개](#소개)
-  - [자바스크립트 기본](#자바스크립트-기본)
+- ['생활코딩'에서 node.js 공부하기](#생활코딩에서-nodejs-공부하기)
 - ['연준이의 코딩 연습실' 수정](#연준이의-코딩-연습실)
 - [My Links...](#my-links)
 ___
@@ -47,13 +46,12 @@ ___
   - 개발자 도구를 이용하면 에러를 확인하고, 명령어를 실행하고, 변수를 분석해보는 등의 일을 할 수 있습니다.
   - Windows 사용자는 F12를 눌러 개발자 도구를 열 수 있습니다. Mac 사용자는 Chrome에선 Cmd+Opt+J, Safari에선 Cmd+Opt+C를 누르면 됩니다. Safari는 개발자 메뉴를 활성화 해 줘야 개발자 도구를 사용할 수 있습니다.
 
-### 자바스크립트 기본
+## ['생활코딩'](https://opentutorials.org/course/3083)에서 node.js 공부하기
 
 
 
 ## '연준이의 코딩 연습실'
 - [github 프로필](https://github.com/leeyeonjun85) 작성
-
 
 ## My Links...
 - [My profile](https://github.com/leeyeonjun85)
