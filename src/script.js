@@ -23,7 +23,6 @@ function goHome () {
 
 // 헤드센터 클릭시 github 링크
 let headCenter = document.getElementById("head-center");
-headCenter.textContent = "연준이의 코딩 연습실"
 
 headCenter.onclick = function () {
 	goHome();
