@@ -25,7 +25,7 @@ function go_home () {
 	location.href = 'https://leeyeonjun85.github.io/home/';
 };
 function go_home_git () {
-	location.href = 'https://leeyeonjun85.github.io/home_git/';
+	location.href = 'https://leeyeonjun85.github.io/home_gitpractice/';
 };
 
 // 헤드센터 클릭시 github 링크
