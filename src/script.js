@@ -19,17 +19,22 @@
 
 
 function go_home_shop () {
-	location.href = 'http://leeyj85.shop/';
+  window.open( "http://leeyj85.shop/", "_blank");
+	// location.href = 'http://leeyj85.shop/';
 };
 function go_home () {
-	location.href = 'https://leeyeonjun85.github.io/home/';
+  window.open ( "https://leeyeonjun85.github.io/home/", "_blank");
+  // window.open ( "https://leeyeonjun85.github.io/home/", "_blank", "toolbar = yes, top = 500, left = 500, width = 400, height = 400");
+	// location.href = 'https://leeyeonjun85.github.io/home/';
 };
-function go_home_git () {
+function go_home_gitpractice () {
 	location.href = 'https://leeyeonjun85.github.io/home_gitpractice/';
 };
 
 // 헤드센터 클릭시 github 링크
 let headCenter = document.getElementById("head-center");
+headCenter.textContent = "이연준의 깃허브 코딩연습실"
+
 
 headCenter.onclick = function () {
 	go_home_git();

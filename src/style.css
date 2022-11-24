@@ -80,9 +80,9 @@ h1 {
 	cursor: pointer;
 }
 
-#headbox #head-center:after {
+/* #headbox #head-center:after {
 	content: '⛳';
-}
+} */
 
 #headbox #head-center:hover {
 	font-size: 26px;
@@ -94,15 +94,15 @@ h1 {
 	margin: auto;
 }
 
-#spartaicon {
+/* #spartaicon {
 	width: 50%;
 	content: url('https://spartacodingclub.kr/v5/icons/logo_v2.svg');
 	cursor: pointer;
-}
+} */
 
-#spartaicon:hover {
+/* #spartaicon:hover {
 	width: 55%;
-}
+} */
 
 #headbox button {
 	border: none;
