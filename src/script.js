@@ -10,34 +10,43 @@
 // headbox
 
 // 홈버튼 클릭시 홈 링크
-let headLeft = document.getElementById("head-left");
-headLeft.textContent = "Go🏠"
+// let headLeft = document.getElementById("head-left");
+// headLeft.textContent = "Go 🏠"
 
-headLeft.onclick = function () {
-  goHome();
+// headLeft.onclick = function () {
+//   go_home_git();
+// };
+
+
+function go_home_shop () {
+	location.href = 'http://leeyj85.shop/';
 };
-
-function goHome () {
+function go_home () {
 	location.href = 'https://leeyeonjun85.github.io/home/';
+};
+function go_home_git () {
+	location.href = 'https://leeyeonjun85.github.io/home_git/';
 };
 
 // 헤드센터 클릭시 github 링크
 let headCenter = document.getElementById("head-center");
 
 headCenter.onclick = function () {
-	goHome();
+	go_home_git();
 };
+
+
 
 // 스파르타 아이콘 클릭시 스파르타 링크
-let spartaIcon = document.getElementById("spartaicon");
+// let spartaIcon = document.getElementById("spartaicon");
 
-spartaIcon.onclick = function () {
-	goSparta();
-};
+// spartaIcon.onclick = function () {
+// 	goSparta();
+// };
 
-function goSparta () {
-	window.open('https://spartacodingclub.kr/');
-};
+// function goSparta () {
+// 	window.open('https://spartacodingclub.kr/');
+// };
 
 
 
